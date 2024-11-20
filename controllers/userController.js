@@ -1,6 +1,7 @@
-const { getAllUsers } = require('../utils/db');
-
-exports.getUsers = (req, res) => {
-    const users = getAllUsers();
-    res.json(users);
-};
+function getUserProfile(req, res) {
+    const user = req.user;
+    res.json({ message: 'User profile', user });
+  }
+  
+  module.exports = { getUserProfile };
+  

@@ -1,9 +1,13 @@
 const express = require('express');
-const { getUsers } = require('../controllers/userController');
-const { authMiddleware, adminMiddleware } = require('../middleware/auth');
+const { getUserProfile } = require('../controllers/userController');
+const validateToken = require('../middleware/auth');
+const requireAdmin = require('../middleware/admin');
 
 const router = express.Router();
 
-router.get('/', authMiddleware, adminMiddleware, getUsers);
+router.get('/profile', validateToken, getUserProfile);
+router.get('/admin-only', validateToken, requireAdmin, (req, res) => {
+  res.json({ message: 'Welcome Admin!' });
+});
 
 module.exports = router;

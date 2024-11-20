@@ -1,0 +1,285 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-11-20T18:50:40.862Z",
+  "__export_source": "insomnia.desktop.app:v10.1.1",
+  "resources": [
+    {
+      "_id": "req_e72c204910fb42dabcc42140eba0ea5e",
+      "parentId": "fld_b40e794c393b4a55b8fb3194509efec1",
+      "modified": 1732127981065,
+      "created": 1732127931845,
+      "url": "http://localhost:3000/api/contracts",
+      "name": "Create Contract",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"empresa\": \"NovaEmpresa\",\n  \"data_inicio\": \"2024-05-01\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        {
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzMyMTI3ODQ5LCJleHAiOjE3MzIxMzE0NDl9.dDYCjLQuD275Ef4ZO1nDqB08Me3YtF8IuQt35j34JX4"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1732127931845,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_b40e794c393b4a55b8fb3194509efec1",
+      "parentId": "wrk_ce32e58a061f458a8be9cfcba9e1c706",
+      "modified": 1732127259396,
+      "created": 1732127259396,
+      "name": "Contracts",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1732127259396,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_ce32e58a061f458a8be9cfcba9e1c706",
+      "parentId": null,
+      "modified": 1732127231784,
+      "created": 1732127231784,
+      "name": "N5M5-API",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_9fac99f7f0ba468cbb896b43bebec2f2",
+      "parentId": "fld_b40e794c393b4a55b8fb3194509efec1",
+      "modified": 1732128358012,
+      "created": 1732127797827,
+      "url": "http://localhost:3000/api/contracts/Doma/2024-01-01",
+      "name": "Get Contracts",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzMyMTI4MzQwLCJleHAiOjE3MzIxMzE5NDB9.q-B2BEaIKkiC93jTXZsf5N8rkmVljfD9yq36BpzAJYw"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1732127797827,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f39cb55ff1ce405f91cbad7588286038",
+      "parentId": "fld_91ea9d5933074887a2173bfc432a4078",
+      "modified": 1732127778225,
+      "created": 1732127667014,
+      "url": "http://localhost:3000/api/users/admin-only",
+      "name": "Admin Olnly Route",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzMyMTI3NDUzLCJleHAiOjE3MzIxMzEwNTN9.ZZ6f1NvbsZRRK4mDNQQnPTinGcWwraS1S2yOEvabjhw"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1732127667014,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_91ea9d5933074887a2173bfc432a4078",
+      "parentId": "wrk_ce32e58a061f458a8be9cfcba9e1c706",
+      "modified": 1732127251495,
+      "created": 1732127251495,
+      "name": "Users",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1732127251495,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_145f785ba32f4df28c88c351c8fca3b9",
+      "parentId": "fld_91ea9d5933074887a2173bfc432a4078",
+      "modified": 1732127658745,
+      "created": 1732127391593,
+      "url": "http://localhost:3000/api/users/profile",
+      "name": "Get User Profile",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzMyMTI3NDUzLCJleHAiOjE3MzIxMzEwNTN9.ZZ6f1NvbsZRRK4mDNQQnPTinGcWwraS1S2yOEvabjhw"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1732127391593,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_33fe6fcf44e84ad6b49a7298186637a0",
+      "parentId": "fld_29ae3ef32f1146779e7188a1ffa9dcaf",
+      "modified": 1732128078006,
+      "created": 1732128040152,
+      "url": "http://localhost:3000/api/auth/refresh-token",
+      "name": "Refresh Token",
+      "description": "",
+      "method": "POST",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzMyMTI3ODQ5LCJleHAiOjE3MzIxMzE0NDl9.dDYCjLQuD275Ef4ZO1nDqB08Me3YtF8IuQt35j34JX4"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1732128040152,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_29ae3ef32f1146779e7188a1ffa9dcaf",
+      "parentId": "wrk_ce32e58a061f458a8be9cfcba9e1c706",
+      "modified": 1732127243694,
+      "created": 1732127243694,
+      "name": "Auth",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1732127243694,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_f7a5d182145545ab941d2b294b2ccff1",
+      "parentId": "fld_29ae3ef32f1146779e7188a1ffa9dcaf",
+      "modified": 1732127373969,
+      "created": 1732127339705,
+      "url": "http://localhost:3000/api/auth/register",
+      "name": "Register",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"username\": \"newuser\",\n  \"password\": \"newpassword\",\n  \"role\": \"user\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/10.1.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1732127339705,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_adb86867ce5f45bfa955a9a76a568442",
+      "parentId": "fld_29ae3ef32f1146779e7188a1ffa9dcaf",
+      "modified": 1732127309064,
+      "created": 1732127272931,
+      "url": "http://localhost:3000/api/auth/login",
+      "name": "Login",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"username\": \"admin\",\n  \"password\": \"123456\"\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/10.1.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1732127281874,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_d5d23237a37b93a04d1f49f5e2ac19179fa1c688",
+      "parentId": "wrk_ce32e58a061f458a8be9cfcba9e1c706",
+      "modified": 1732127231787,
+      "created": 1732127231787,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1732127231787,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_d5d23237a37b93a04d1f49f5e2ac19179fa1c688",
+      "parentId": "wrk_ce32e58a061f458a8be9cfcba9e1c706",
+      "modified": 1732127231787,
+      "created": 1732127231787,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    }
+  ]
+}
